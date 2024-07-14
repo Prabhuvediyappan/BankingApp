@@ -112,7 +112,7 @@ resource "aws_security_group" "proj-sg" {
 # Creating a new network interface
 resource "aws_network_interface" "proj-ni" {
  subnet_id = aws_subnet.proj-subnet.id
- private_ips = ["10.0.1.10"]
+ private_ips = ["172.31.38.38"]
  security_groups = [aws_security_group.proj-sg.id]
 }
 
